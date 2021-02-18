@@ -17,10 +17,12 @@ namespace BinaryTree
             {
                 Node<T> item = new Node<T>(data);
                 Root = item;
+                Count = 1;
                 return;
             }
 
             Root.Add(data);
+            Count++;
         }
         public List<T> Preorder()
         {
